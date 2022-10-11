@@ -1,0 +1,16 @@
+PODS:
+  - SkaleKit (0.5.3)
+
+DEPENDENCIES:
+  - SkaleKit
+
+SPEC REPOS:
+  trunk:
+    - SkaleKit
+
+SPEC CHECKSUMS:
+  SkaleKit: 993c70e39ed6d861c5fbed482172bb9d5a8340da
+
+PODFILE CHECKSUM: 043f9388aa835c816c8734bca87d0d9eea6272ab
+
+COCOAPODS: 1.11.3
