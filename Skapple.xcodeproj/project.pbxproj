@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E547F7829033F000035C76F /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F7729033F000035C76F /* HistoryView.swift */; };
+		0E547F7A29033F1D0035C76F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F7929033F1D0035C76F /* SettingsView.swift */; };
+		0E547F7D2906FE0B0035C76F /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F7C2906FE0B0035C76F /* MainCoordinator.swift */; };
+		0E547F7F2906FE350035C76F /* MainCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F7E2906FE350035C76F /* MainCoordinatorView.swift */; };
+		0E547F832906FE930035C76F /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F822906FE930035C76F /* HistoryViewModel.swift */; };
+		0E547F852906FE9B0035C76F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F842906FE9B0035C76F /* SettingsViewModel.swift */; };
+		0E547F8A2907022F0035C76F /* ScaleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F892907022F0035C76F /* ScaleCoordinator.swift */; };
+		0E547F8C290702370035C76F /* ScaleCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F8B290702370035C76F /* ScaleCoordinatorView.swift */; };
+		0E547F8E290702420035C76F /* HistoryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F8D290702420035C76F /* HistoryCoordinator.swift */; };
+		0E547F902907024A0035C76F /* HistoryCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F8F2907024A0035C76F /* HistoryCoordinatorView.swift */; };
+		0E547F92290702540035C76F /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F91290702540035C76F /* SettingsCoordinator.swift */; };
+		0E547F94290702610035C76F /* SettingsCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F93290702610035C76F /* SettingsCoordinatorView.swift */; };
 		0EBA28A528F5CF480035550D /* SkappleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28A428F5CF480035550D /* SkappleApp.swift */; };
-		0EBA28A728F5CF480035550D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28A628F5CF480035550D /* ContentView.swift */; };
+		0EBA28A728F5CF480035550D /* ScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28A628F5CF480035550D /* ScaleView.swift */; };
 		0EBA28A928F5CF490035550D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBA28A828F5CF490035550D /* Assets.xcassets */; };
 		0EBA28AC28F5CF490035550D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBA28AB28F5CF490035550D /* Preview Assets.xcassets */; };
 		0EBA28B628F5CF490035550D /* SkappleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28B528F5CF490035550D /* SkappleTests.swift */; };
 		0EBA28C028F5CF490035550D /* SkappleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28BF28F5CF490035550D /* SkappleUITests.swift */; };
 		0EBA28C228F5CF490035550D /* SkappleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28C128F5CF490035550D /* SkappleUITestsLaunchTests.swift */; };
-		0EBA28D128F5D1B90035550D /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28D028F5D1B90035550D /* HomeViewModel.swift */; };
+		0EBA28D128F5D1B90035550D /* ScaleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28D028F5D1B90035550D /* ScaleViewModel.swift */; };
 		0EBA28D428F5D1CF0035550D /* SkappleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28D328F5D1CF0035550D /* SkappleService.swift */; };
 		106E97BAB61BB274A1B80D13 /* Pods_Skapple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE05002EAB9CCC610729298 /* Pods_Skapple.framework */; };
 		BEB8E7FA0C7A4FABFEAE1DE0 /* Pods_Skapple_SkappleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148857629320C8AD9B64D2B8 /* Pods_Skapple_SkappleUITests.framework */; };
@@ -39,9 +51,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E547F7729033F000035C76F /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		0E547F7929033F1D0035C76F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		0E547F7C2906FE0B0035C76F /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		0E547F7E2906FE350035C76F /* MainCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinatorView.swift; sourceTree = "<group>"; };
+		0E547F822906FE930035C76F /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		0E547F842906FE9B0035C76F /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		0E547F892907022F0035C76F /* ScaleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleCoordinator.swift; sourceTree = "<group>"; };
+		0E547F8B290702370035C76F /* ScaleCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleCoordinatorView.swift; sourceTree = "<group>"; };
+		0E547F8D290702420035C76F /* HistoryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinator.swift; sourceTree = "<group>"; };
+		0E547F8F2907024A0035C76F /* HistoryCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinatorView.swift; sourceTree = "<group>"; };
+		0E547F91290702540035C76F /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		0E547F93290702610035C76F /* SettingsCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinatorView.swift; sourceTree = "<group>"; };
 		0EBA28A128F5CF480035550D /* Skapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skapple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBA28A428F5CF480035550D /* SkappleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkappleApp.swift; sourceTree = "<group>"; };
-		0EBA28A628F5CF480035550D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0EBA28A628F5CF480035550D /* ScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleView.swift; sourceTree = "<group>"; };
 		0EBA28A828F5CF490035550D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EBA28AB28F5CF490035550D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EBA28B128F5CF490035550D /* SkappleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkappleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,7 +73,7 @@
 		0EBA28BB28F5CF490035550D /* SkappleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SkappleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBA28BF28F5CF490035550D /* SkappleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkappleUITests.swift; sourceTree = "<group>"; };
 		0EBA28C128F5CF490035550D /* SkappleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkappleUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		0EBA28D028F5D1B90035550D /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		0EBA28D028F5D1B90035550D /* ScaleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewModel.swift; sourceTree = "<group>"; };
 		0EBA28D328F5D1CF0035550D /* SkappleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkappleService.swift; sourceTree = "<group>"; };
 		13D2C072E21FB486E844CD90 /* Pods-SkappleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkappleTests.debug.xcconfig"; path = "Target Support Files/Pods-SkappleTests/Pods-SkappleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		148857629320C8AD9B64D2B8 /* Pods_Skapple_SkappleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skapple_SkappleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +114,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E547F6D29032E070035C76F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0EBA28A628F5CF480035550D /* ScaleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E547F6E290330AA0035C76F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0EBA28D028F5D1B90035550D /* ScaleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0E547F6F290338A00035C76F /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				0E547F7B2906FDEA0035C76F /* Coordinator */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		0E547F7329033CF80035C76F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				0E547F882907021F0035C76F /* Coordinator */,
+				0E547F812906FE860035C76F /* ViewModel */,
+				0E547F7629033EEA0035C76F /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		0E547F7429033D160035C76F /* History */ = {
+			isa = PBXGroup;
+			children = (
+				0E547F87290702180035C76F /* Coordinator */,
+				0E547F802906FE800035C76F /* ViewModel */,
+				0E547F7529033EE50035C76F /* View */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		0E547F7529033EE50035C76F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E547F7729033F000035C76F /* HistoryView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E547F7629033EEA0035C76F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E547F7929033F1D0035C76F /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E547F7B2906FDEA0035C76F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0E547F7C2906FE0B0035C76F /* MainCoordinator.swift */,
+				0E547F7E2906FE350035C76F /* MainCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0E547F802906FE800035C76F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0E547F822906FE930035C76F /* HistoryViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0E547F812906FE860035C76F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0E547F842906FE9B0035C76F /* SettingsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0E547F86290702100035C76F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0E547F892907022F0035C76F /* ScaleCoordinator.swift */,
+				0E547F8B290702370035C76F /* ScaleCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0E547F87290702180035C76F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0E547F8D290702420035C76F /* HistoryCoordinator.swift */,
+				0E547F8F2907024A0035C76F /* HistoryCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0E547F882907021F0035C76F /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0E547F91290702540035C76F /* SettingsCoordinator.swift */,
+				0E547F93290702610035C76F /* SettingsCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		0EBA289828F5CF480035550D = {
 			isa = PBXGroup;
 			children = (
@@ -115,8 +251,8 @@
 		0EBA28A328F5CF480035550D /* Skapple */ = {
 			isa = PBXGroup;
 			children = (
-				0EBA28CE28F5D1A40035550D /* Modules */,
-				0EBA28D228F5D1BE0035550D /* Services */,
+				0EBA28CE28F5D1A40035550D /* Module */,
+				0EBA28D228F5D1BE0035550D /* Service */,
 				0EBA28A428F5CF480035550D /* SkappleApp.swift */,
 				0EBA28A828F5CF490035550D /* Assets.xcassets */,
 				0EBA28AA28F5CF490035550D /* Preview Content */,
@@ -149,29 +285,33 @@
 			path = SkappleUITests;
 			sourceTree = "<group>";
 		};
-		0EBA28CE28F5D1A40035550D /* Modules */ = {
+		0EBA28CE28F5D1A40035550D /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				0EBA28CF28F5D1AC0035550D /* Home */,
+				0E547F6F290338A00035C76F /* Main */,
+				0EBA28CF28F5D1AC0035550D /* Scale */,
+				0E547F7429033D160035C76F /* History */,
+				0E547F7329033CF80035C76F /* Settings */,
 			);
-			path = Modules;
+			path = Module;
 			sourceTree = "<group>";
 		};
-		0EBA28CF28F5D1AC0035550D /* Home */ = {
+		0EBA28CF28F5D1AC0035550D /* Scale */ = {
 			isa = PBXGroup;
 			children = (
-				0EBA28A628F5CF480035550D /* ContentView.swift */,
-				0EBA28D028F5D1B90035550D /* HomeViewModel.swift */,
+				0E547F86290702100035C76F /* Coordinator */,
+				0E547F6E290330AA0035C76F /* ViewModel */,
+				0E547F6D29032E070035C76F /* View */,
 			);
-			path = Home;
+			path = Scale;
 			sourceTree = "<group>";
 		};
-		0EBA28D228F5D1BE0035550D /* Services */ = {
+		0EBA28D228F5D1BE0035550D /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				0EBA28D328F5D1CF0035550D /* SkappleService.swift */,
 			);
-			path = Services;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		A6C4D99DCAEB37AEE672A569 /* Pods */ = {
@@ -435,9 +575,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E547F7A29033F1D0035C76F /* SettingsView.swift in Sources */,
+				0E547F8E290702420035C76F /* HistoryCoordinator.swift in Sources */,
+				0E547F7D2906FE0B0035C76F /* MainCoordinator.swift in Sources */,
+				0E547F8C290702370035C76F /* ScaleCoordinatorView.swift in Sources */,
 				0EBA28D428F5D1CF0035550D /* SkappleService.swift in Sources */,
-				0EBA28A728F5CF480035550D /* ContentView.swift in Sources */,
-				0EBA28D128F5D1B90035550D /* HomeViewModel.swift in Sources */,
+				0E547F7829033F000035C76F /* HistoryView.swift in Sources */,
+				0EBA28A728F5CF480035550D /* ScaleView.swift in Sources */,
+				0E547F8A2907022F0035C76F /* ScaleCoordinator.swift in Sources */,
+				0E547F832906FE930035C76F /* HistoryViewModel.swift in Sources */,
+				0E547F92290702540035C76F /* SettingsCoordinator.swift in Sources */,
+				0E547F7F2906FE350035C76F /* MainCoordinatorView.swift in Sources */,
+				0EBA28D128F5D1B90035550D /* ScaleViewModel.swift in Sources */,
+				0E547F902907024A0035C76F /* HistoryCoordinatorView.swift in Sources */,
+				0E547F94290702610035C76F /* SettingsCoordinatorView.swift in Sources */,
+				0E547F852906FE9B0035C76F /* SettingsViewModel.swift in Sources */,
 				0EBA28A528F5CF480035550D /* SkappleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

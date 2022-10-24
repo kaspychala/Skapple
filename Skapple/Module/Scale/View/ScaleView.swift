@@ -7,10 +7,11 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ScaleView: View {
+    @ObservedObject var viewModel: ScaleViewModel
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        Text(viewModel.title)
             .onTapGesture {
                 SkappleService.shared.connect()
             }
@@ -19,6 +20,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ScaleView(viewModel: .init(title: "Scale"))
     }
 }

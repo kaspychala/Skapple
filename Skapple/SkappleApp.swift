@@ -9,9 +9,14 @@ import SwiftUI
 
 @main
 struct SkappleApp: App {
+
+    // MARK: Stored Properties
+    @StateObject var coordinator = MainCoordinator()
+
+    // MARK: Scenes
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainCoordinatorView(coordinator: coordinator)
         }
     }
 }
