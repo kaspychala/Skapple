@@ -15,5 +15,4 @@ class ScaleViewModel: ObservableObject {
     init(title: String) {
         self.title = title
     }
-
 }

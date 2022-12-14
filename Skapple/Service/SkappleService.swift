@@ -8,10 +8,12 @@
 import Foundation
 import SkaleKit
 import CoreBluetooth
+import SwiftUI
 
-class SkappleService: NSObject {
+class SkappleService: NSObject, ObservableObject {
 
     static let shared = SkappleService()
+    @Published var weight: Double = 0.0
     let skale = SKSkale()
     var centralManager: CBCentralManager?
 
@@ -64,6 +66,7 @@ extension SkappleService: SKSkaleDelegate {
 
     func skaleWeightDidUpdate(_ weight: Float32) {
         print(weight)
+        self.weight = Double(weight)
     }
 
     func skale(_ skale: SKSkale!, didErrorOccur error: Error!) {

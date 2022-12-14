@@ -28,6 +28,7 @@
 		0EBA28C228F5CF490035550D /* SkappleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28C128F5CF490035550D /* SkappleUITestsLaunchTests.swift */; };
 		0EBA28D128F5D1B90035550D /* ScaleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28D028F5D1B90035550D /* ScaleViewModel.swift */; };
 		0EBA28D428F5D1CF0035550D /* SkappleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28D328F5D1CF0035550D /* SkappleService.swift */; };
+		0ED244AE293FB435002D92DB /* ScaleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED244AD293FB435002D92DB /* ScaleShape.swift */; };
 		106E97BAB61BB274A1B80D13 /* Pods_Skapple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE05002EAB9CCC610729298 /* Pods_Skapple.framework */; };
 		BEB8E7FA0C7A4FABFEAE1DE0 /* Pods_Skapple_SkappleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148857629320C8AD9B64D2B8 /* Pods_Skapple_SkappleUITests.framework */; };
 		D14A4972508CBF0C7F4A4175 /* Pods_SkappleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2915A207FF7C98338BF9F115 /* Pods_SkappleTests.framework */; };
@@ -75,6 +76,7 @@
 		0EBA28C128F5CF490035550D /* SkappleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkappleUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0EBA28D028F5D1B90035550D /* ScaleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleViewModel.swift; sourceTree = "<group>"; };
 		0EBA28D328F5D1CF0035550D /* SkappleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkappleService.swift; sourceTree = "<group>"; };
+		0ED244AD293FB435002D92DB /* ScaleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleShape.swift; sourceTree = "<group>"; };
 		13D2C072E21FB486E844CD90 /* Pods-SkappleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkappleTests.debug.xcconfig"; path = "Target Support Files/Pods-SkappleTests/Pods-SkappleTests.debug.xcconfig"; sourceTree = "<group>"; };
 		148857629320C8AD9B64D2B8 /* Pods_Skapple_SkappleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skapple_SkappleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE05002EAB9CCC610729298 /* Pods_Skapple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skapple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,7 @@
 		0E547F6D29032E070035C76F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0ED244AA293FB3E6002D92DB /* ScaleShape */,
 				0EBA28A628F5CF480035550D /* ScaleView.swift */,
 			);
 			path = View;
@@ -312,6 +315,14 @@
 				0EBA28D328F5D1CF0035550D /* SkappleService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		0ED244AA293FB3E6002D92DB /* ScaleShape */ = {
+			isa = PBXGroup;
+			children = (
+				0ED244AD293FB435002D92DB /* ScaleShape.swift */,
+			);
+			path = ScaleShape;
 			sourceTree = "<group>";
 		};
 		A6C4D99DCAEB37AEE672A569 /* Pods */ = {
@@ -590,6 +601,7 @@
 				0E547F902907024A0035C76F /* HistoryCoordinatorView.swift in Sources */,
 				0E547F94290702610035C76F /* SettingsCoordinatorView.swift in Sources */,
 				0E547F852906FE9B0035C76F /* SettingsViewModel.swift in Sources */,
+				0ED244AE293FB435002D92DB /* ScaleShape.swift in Sources */,
 				0EBA28A528F5CF480035550D /* SkappleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
