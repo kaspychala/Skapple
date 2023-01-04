@@ -15,24 +15,61 @@ struct ScaleView: View {
     var body: some View {
         VStack(alignment: .center) {
             ScaleShape(scaleWeight: ScaleWeight(skappleService.weight))
-                .stroke(Color.blue, lineWidth: 3)
+                .stroke(Color.white, lineWidth: 3)
                 .padding(20)
                 .animation(.easeInOut(duration: duration))
                 .layoutPriority(1)
                 .frame(height: 200)
             Spacer()
-                .frame(height: 12)
+                .frame(height: 24)
+            Text("CURRENT WEIGHT")
+                .font(
+                    .system(size: 18)
+                    .weight(.light)
+                )
+            Spacer()
+                .frame(height: 6)
             Text("\(String(format: "%.1f", skappleService.weight))g")
                 .font(
-                    .system(
-                        .largeTitle,
-                        design: .rounded
-                    )
-                    .weight(.bold)
+                    .system(size: 36)
+                    .weight(.medium)
                 )
                 .onTapGesture {
                     skappleService.connect()
                 }
+            Spacer()
+                .frame(height: 12)
+            HStack(alignment: .center) {
+                VStack(alignment: .leading) {
+                    Text("LAST MINIMUM WEIGHT")
+                        .font(
+                            .system(size: 12)
+                            .weight(.light)
+                        )
+                    Spacer()
+                        .frame(height: 6)
+                    Text("\(String(format: "%.1f", skappleService.minWeight))g")
+                        .font(
+                            .system(size: 24)
+                            .weight(.light)
+                        )
+                }
+                Spacer()
+                VStack(alignment: .leading) {
+                    Text("LAST MAXIMUM WEIGHT")
+                        .font(
+                            .system(size: 12)
+                            .weight(.light)
+                        )
+                    Spacer()
+                        .frame(height: 6)
+                    Text("\(String(format: "%.1f", skappleService.maxWeight))g")
+                        .font(
+                            .system(size: 24)
+                            .weight(.light)
+                        )
+                }
+            }.padding(24)
         }
         .navigationBarTitle(viewModel.title).padding(.bottom, 50)
     }

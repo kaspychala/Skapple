@@ -13,7 +13,11 @@ import SwiftUI
 class SkappleService: NSObject, ObservableObject {
 
     static let shared = SkappleService()
+    var isMinWeightUpdateable  = true
     @Published var weight: Double = 0.0
+    @Published var minWeight: Double = 0.0
+    @Published var maxWeight: Double = 0.0
+
     let skale = SKSkale()
     var centralManager: CBCentralManager?
 
@@ -65,8 +69,25 @@ extension SkappleService: SKSkaleDelegate {
     }
 
     func skaleWeightDidUpdate(_ weight: Float32) {
-        print(weight)
         self.weight = Double(weight)
+        if !skaleDidTare() {
+            if isMinWeightUpdateable {
+                minWeight = 0.0
+            }
+            if self.weight > minWeight, minWeight <= maxWeight {
+                minWeight = self.weight
+            }
+            if self.weight > maxWeight, maxWeight <= minWeight {
+                maxWeight = self.weight
+            }
+            isMinWeightUpdateable = false
+        } else {
+            isMinWeightUpdateable = true
+        }
+    }
+
+    func skaleDidTare() -> Bool {
+        return self.weight <= 0.0
     }
 
     func skale(_ skale: SKSkale!, didErrorOccur error: Error!) {
