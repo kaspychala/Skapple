@@ -19,6 +19,13 @@
 		0E547F902907024A0035C76F /* HistoryCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F8F2907024A0035C76F /* HistoryCoordinatorView.swift */; };
 		0E547F92290702540035C76F /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F91290702540035C76F /* SettingsCoordinator.swift */; };
 		0E547F94290702610035C76F /* SettingsCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E547F93290702610035C76F /* SettingsCoordinatorView.swift */; };
+		0E8DC22A296E00E600832E85 /* VolumeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8DC229296E00E600832E85 /* VolumeObserver.swift */; };
+		0E8DC22C296E02B900832E85 /* MPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8DC22B296E02B900832E85 /* MPView.swift */; };
+		0E8DC23629806C7C00832E85 /* ClickerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8DC23529806C7C00832E85 /* ClickerCoordinator.swift */; };
+		0E8DC23829806C8A00832E85 /* ClickerCoordinatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8DC23729806C8A00832E85 /* ClickerCoordinatorView.swift */; };
+		0E8DC23A29806C9500832E85 /* ClickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8DC23929806C9500832E85 /* ClickerViewModel.swift */; };
+		0E8DC23C29806C9C00832E85 /* ClickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8DC23B29806C9C00832E85 /* ClickerView.swift */; };
+		0E8DC23F2980739200832E85 /* Click.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0E8DC23E2980739200832E85 /* Click.mp3 */; };
 		0EBA28A528F5CF480035550D /* SkappleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28A428F5CF480035550D /* SkappleApp.swift */; };
 		0EBA28A728F5CF480035550D /* ScaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28A628F5CF480035550D /* ScaleView.swift */; };
 		0EBA28A928F5CF490035550D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EBA28A828F5CF490035550D /* Assets.xcassets */; };
@@ -64,6 +71,13 @@
 		0E547F8F2907024A0035C76F /* HistoryCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCoordinatorView.swift; sourceTree = "<group>"; };
 		0E547F91290702540035C76F /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
 		0E547F93290702610035C76F /* SettingsCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinatorView.swift; sourceTree = "<group>"; };
+		0E8DC229296E00E600832E85 /* VolumeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeObserver.swift; sourceTree = "<group>"; };
+		0E8DC22B296E02B900832E85 /* MPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPView.swift; sourceTree = "<group>"; };
+		0E8DC23529806C7C00832E85 /* ClickerCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerCoordinator.swift; sourceTree = "<group>"; };
+		0E8DC23729806C8A00832E85 /* ClickerCoordinatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerCoordinatorView.swift; sourceTree = "<group>"; };
+		0E8DC23929806C9500832E85 /* ClickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerViewModel.swift; sourceTree = "<group>"; };
+		0E8DC23B29806C9C00832E85 /* ClickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerView.swift; sourceTree = "<group>"; };
+		0E8DC23E2980739200832E85 /* Click.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Click.mp3; sourceTree = "<group>"; };
 		0EBA28A128F5CF480035550D /* Skapple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Skapple.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EBA28A428F5CF480035550D /* SkappleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkappleApp.swift; sourceTree = "<group>"; };
 		0EBA28A628F5CF480035550D /* ScaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaleView.swift; sourceTree = "<group>"; };
@@ -229,6 +243,50 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		0E8DC23129806C3D00832E85 /* Clicker */ = {
+			isa = PBXGroup;
+			children = (
+				0E8DC23229806C4E00832E85 /* Coordinator */,
+				0E8DC23329806C5700832E85 /* ViewModel */,
+				0E8DC23429806C5E00832E85 /* View */,
+			);
+			path = Clicker;
+			sourceTree = "<group>";
+		};
+		0E8DC23229806C4E00832E85 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0E8DC23529806C7C00832E85 /* ClickerCoordinator.swift */,
+				0E8DC23729806C8A00832E85 /* ClickerCoordinatorView.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		0E8DC23329806C5700832E85 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0E8DC23929806C9500832E85 /* ClickerViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0E8DC23429806C5E00832E85 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0E8DC22B296E02B900832E85 /* MPView.swift */,
+				0E8DC23B29806C9C00832E85 /* ClickerView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0E8DC23D2980735B00832E85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0E8DC23E2980739200832E85 /* Click.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		0EBA289828F5CF480035550D = {
 			isa = PBXGroup;
 			children = (
@@ -256,6 +314,7 @@
 			children = (
 				0EBA28CE28F5D1A40035550D /* Module */,
 				0EBA28D228F5D1BE0035550D /* Service */,
+				0E8DC23D2980735B00832E85 /* Resources */,
 				0EBA28A428F5CF480035550D /* SkappleApp.swift */,
 				0EBA28A828F5CF490035550D /* Assets.xcassets */,
 				0EBA28AA28F5CF490035550D /* Preview Content */,
@@ -294,6 +353,7 @@
 				0E547F6F290338A00035C76F /* Main */,
 				0EBA28CF28F5D1AC0035550D /* Scale */,
 				0E547F7429033D160035C76F /* History */,
+				0E8DC23129806C3D00832E85 /* Clicker */,
 				0E547F7329033CF80035C76F /* Settings */,
 			);
 			path = Module;
@@ -313,6 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				0EBA28D328F5D1CF0035550D /* SkappleService.swift */,
+				0E8DC229296E00E600832E85 /* VolumeObserver.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -458,6 +519,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EBA28AC28F5CF490035550D /* Preview Assets.xcassets in Resources */,
+				0E8DC23F2980739200832E85 /* Click.mp3 in Resources */,
 				0EBA28A928F5CF490035550D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -590,16 +652,22 @@
 				0E547F8E290702420035C76F /* HistoryCoordinator.swift in Sources */,
 				0E547F7D2906FE0B0035C76F /* MainCoordinator.swift in Sources */,
 				0E547F8C290702370035C76F /* ScaleCoordinatorView.swift in Sources */,
+				0E8DC23A29806C9500832E85 /* ClickerViewModel.swift in Sources */,
 				0EBA28D428F5D1CF0035550D /* SkappleService.swift in Sources */,
+				0E8DC22A296E00E600832E85 /* VolumeObserver.swift in Sources */,
 				0E547F7829033F000035C76F /* HistoryView.swift in Sources */,
+				0E8DC22C296E02B900832E85 /* MPView.swift in Sources */,
 				0EBA28A728F5CF480035550D /* ScaleView.swift in Sources */,
 				0E547F8A2907022F0035C76F /* ScaleCoordinator.swift in Sources */,
 				0E547F832906FE930035C76F /* HistoryViewModel.swift in Sources */,
 				0E547F92290702540035C76F /* SettingsCoordinator.swift in Sources */,
+				0E8DC23629806C7C00832E85 /* ClickerCoordinator.swift in Sources */,
 				0E547F7F2906FE350035C76F /* MainCoordinatorView.swift in Sources */,
 				0EBA28D128F5D1B90035550D /* ScaleViewModel.swift in Sources */,
 				0E547F902907024A0035C76F /* HistoryCoordinatorView.swift in Sources */,
 				0E547F94290702610035C76F /* SettingsCoordinatorView.swift in Sources */,
+				0E8DC23C29806C9C00832E85 /* ClickerView.swift in Sources */,
+				0E8DC23829806C8A00832E85 /* ClickerCoordinatorView.swift in Sources */,
 				0E547F852906FE9B0035C76F /* SettingsViewModel.swift in Sources */,
 				0ED244AE293FB435002D92DB /* ScaleShape.swift in Sources */,
 				0EBA28A528F5CF480035550D /* SkappleApp.swift in Sources */,
@@ -759,6 +827,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Skapple/Preview Content\"";
@@ -780,6 +849,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaspychala.Skapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -792,6 +862,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Skapple/Preview Content\"";
@@ -813,6 +884,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kaspychala.Skapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

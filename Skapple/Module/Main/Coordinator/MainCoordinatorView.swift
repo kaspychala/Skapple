@@ -23,6 +23,10 @@ struct MainCoordinatorView: View {
                 .tabItem { Label("History", systemImage: "clock.arrow.circlepath") }
                 .tag(AppTab.history)
 
+            ClickerCoordinatorView(coordinator: coordinator.clickerCoordinator)
+                .tabItem { Label("Clicker", systemImage: "speaker.wave.1") }
+                .tag(AppTab.clicker)
+
             SettingsCoordinatorView(coordinator: coordinator.settingsCoordinator)
                 .tabItem { Label("Settings", systemImage: "gear") }
                 .tag(AppTab.settings)
