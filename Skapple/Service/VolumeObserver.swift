@@ -32,6 +32,7 @@ final class VolumeObserver: ObservableObject {
 
         progressObserver = session.observe(\.outputVolume) { [self] (session, value) in
             DispatchQueue.main.async {
+                MPVolumeView.setVolume(0.99)
                 self.volume = session.outputVolume
                 self.playSound()
             }

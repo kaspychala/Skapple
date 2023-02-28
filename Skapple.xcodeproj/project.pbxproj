@@ -37,6 +37,7 @@
 		0EBA28D428F5D1CF0035550D /* SkappleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBA28D328F5D1CF0035550D /* SkappleService.swift */; };
 		0ED244AE293FB435002D92DB /* ScaleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ED244AD293FB435002D92DB /* ScaleShape.swift */; };
 		106E97BAB61BB274A1B80D13 /* Pods_Skapple.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE05002EAB9CCC610729298 /* Pods_Skapple.framework */; };
+		668E9AA029AE9B17003D7AB3 /* MPVolumeView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668E9A9F29AE9B17003D7AB3 /* MPVolumeView+.swift */; };
 		BEB8E7FA0C7A4FABFEAE1DE0 /* Pods_Skapple_SkappleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 148857629320C8AD9B64D2B8 /* Pods_Skapple_SkappleUITests.framework */; };
 		D14A4972508CBF0C7F4A4175 /* Pods_SkappleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2915A207FF7C98338BF9F115 /* Pods_SkappleTests.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		1FE05002EAB9CCC610729298 /* Pods_Skapple.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Skapple.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2915A207FF7C98338BF9F115 /* Pods_SkappleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkappleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FFCD64838EE222ACCE31225 /* Pods-Skapple.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skapple.release.xcconfig"; path = "Target Support Files/Pods-Skapple/Pods-Skapple.release.xcconfig"; sourceTree = "<group>"; };
+		668E9A9F29AE9B17003D7AB3 /* MPVolumeView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MPVolumeView+.swift"; sourceTree = "<group>"; };
 		A83BC2D9ECBC2289D662B68E /* Pods-Skapple.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skapple.debug.xcconfig"; path = "Target Support Files/Pods-Skapple/Pods-Skapple.debug.xcconfig"; sourceTree = "<group>"; };
 		C1A79153EF5831A87B69C2D1 /* Pods-SkappleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkappleTests.release.xcconfig"; path = "Target Support Files/Pods-SkappleTests/Pods-SkappleTests.release.xcconfig"; sourceTree = "<group>"; };
 		DEA2C6AA34FD50988088CFE7 /* Pods-Skapple-SkappleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Skapple-SkappleUITests.debug.xcconfig"; path = "Target Support Files/Pods-Skapple-SkappleUITests/Pods-Skapple-SkappleUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 			children = (
 				0EBA28CE28F5D1A40035550D /* Module */,
 				0EBA28D228F5D1BE0035550D /* Service */,
+				668E9A9E29AE9AEA003D7AB3 /* Extensions */,
 				0E8DC23D2980735B00832E85 /* Resources */,
 				0EBA28A428F5CF480035550D /* SkappleApp.swift */,
 				0EBA28A828F5CF490035550D /* Assets.xcassets */,
@@ -384,6 +387,14 @@
 				0ED244AD293FB435002D92DB /* ScaleShape.swift */,
 			);
 			path = ScaleShape;
+			sourceTree = "<group>";
+		};
+		668E9A9E29AE9AEA003D7AB3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				668E9A9F29AE9B17003D7AB3 /* MPVolumeView+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		A6C4D99DCAEB37AEE672A569 /* Pods */ = {
@@ -665,6 +676,7 @@
 				0E547F7F2906FE350035C76F /* MainCoordinatorView.swift in Sources */,
 				0EBA28D128F5D1B90035550D /* ScaleViewModel.swift in Sources */,
 				0E547F902907024A0035C76F /* HistoryCoordinatorView.swift in Sources */,
+				668E9AA029AE9B17003D7AB3 /* MPVolumeView+.swift in Sources */,
 				0E547F94290702610035C76F /* SettingsCoordinatorView.swift in Sources */,
 				0E8DC23C29806C9C00832E85 /* ClickerView.swift in Sources */,
 				0E8DC23829806C8A00832E85 /* ClickerCoordinatorView.swift in Sources */,
@@ -831,7 +843,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Skapple/Preview Content\"";
-				DEVELOPMENT_TEAM = F6N6BU583P;
+				DEVELOPMENT_TEAM = P9255R54EV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
@@ -866,7 +878,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Skapple/Preview Content\"";
-				DEVELOPMENT_TEAM = F6N6BU583P;
+				DEVELOPMENT_TEAM = P9255R54EV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
