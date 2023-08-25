@@ -11,6 +11,7 @@ protocol APIRouter {
     var host: String { get }
     var scheme: String { get }
     var path: String { get }
+    var port: Int { get }
     var method: String { get }
     var parameters: [URLQueryItem] { get }
 }

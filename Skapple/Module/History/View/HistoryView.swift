@@ -10,9 +10,27 @@ import SwiftUI
 struct HistoryView: View {
     
     @ObservedObject var viewModel: HistoryViewModel
+    @State private var viewDidLoad = false
 
     var body: some View {
-        Text(viewModel.title)
+        List {
+            ForEach(viewModel.foods, id: \.self) { food in
+                FoodView(food: food)
+                    .onAppear() {
+                        Task {
+                            await viewModel.loadMoreFoods(food: food)
+                        }
+                    }
+            }
+        }
+        .onAppear() {
+            if !viewDidLoad {
+                viewDidLoad.toggle()
+                Task {
+                    await viewModel.getFoods()
+                }
+            }
+        }
     }
 }
 

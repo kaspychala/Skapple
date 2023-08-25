@@ -8,7 +8,7 @@
 import Foundation
 
 enum FoodAPIRouter: APIRouter {
-    case getFoods
+    case getFoods(limit: String, page: String)
 //    case putFood(foodId: Int)
 //    case postFood(foodId: Int)
 //    case deleteFood(foodId: Int)
@@ -16,7 +16,14 @@ enum FoodAPIRouter: APIRouter {
     var host: String {
         switch self {
         case .getFoods:
-            return "localhost"
+            return "192.168.0.31"
+        }
+    }
+
+    var port: Int {
+        switch self {
+        case .getFoods:
+            return 8080
         }
     }
 
@@ -30,7 +37,7 @@ enum FoodAPIRouter: APIRouter {
     var path: String {
         switch self {
         case .getFoods:
-            return "/foods"
+            return "/foods/paginate"
         }
     }
 
@@ -43,8 +50,9 @@ enum FoodAPIRouter: APIRouter {
 
     var parameters: [URLQueryItem] {
         switch self {
-        case .getFoods:
-            return []
+        case .getFoods(let limit, let page):
+            return [URLQueryItem(name: "limit", value: limit),
+                    URLQueryItem(name: "page", value: page)]
         }
     }
 }

@@ -14,6 +14,7 @@ class APINetworkRequest {
         components.host = apiRouter.host
         components.scheme = apiRouter.scheme
         components.path = apiRouter.path
+        components.port = apiRouter.port
         components.queryItems = apiRouter.parameters
 
         guard let url = components.url else { throw APIRequestError.badUrl }
@@ -30,7 +31,7 @@ class APINetworkRequest {
                 }
 
                 guard let data = data else {
-                    return continuation.resume(with: .failure(APIRequestError.noData)) // 5
+                    return continuation.resume(with: .failure(APIRequestError.noData))
                 }
 
                 do {

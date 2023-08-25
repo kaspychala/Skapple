@@ -9,13 +9,15 @@ import Foundation
 
 protocol FoodProtocol {
 
-    func getFoods() async throws -> [Food]
+    func getFoods(limit: String, page: String) async throws -> [Food]
 }
 
 class FoodAPIClient: FoodProtocol {
 
-    func getFoods() async throws -> [Food] {
-        let response: FoodResponse = try await APINetworkRequest.request(apiRouter: FoodAPIRouter.getFoods)
+    func getFoods(limit: String, page: String) async throws -> [Food] {
+        let response: FoodResponse = try await APINetworkRequest.request(
+            apiRouter: FoodAPIRouter.getFoods(
+                limit: limit, page: page))
         return response.foods
     }
 }
